@@ -12,6 +12,7 @@ class MyCardWidget extends StatefulWidget {
 
 class _MyCardWidgetState extends State<MyCardWidget> {
   Color bgColor = Colors.yellow;
+  bool makeCircular = false;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -20,7 +21,13 @@ class _MyCardWidgetState extends State<MyCardWidget> {
           bgColor = Colors.primaries[Random().nextInt(Colors.primaries.length)];
         });
       },
+      onLongPress: (){
+        setState(() {
+          makeCircular = !makeCircular;
+        });
+      },
       child:   Card(
+        shape: makeCircular? const CircleBorder(): const RoundedRectangleBorder(),
         child: const SizedBox(
           height: 300,
           width: 300,
