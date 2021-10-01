@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MyIconWidget extends StatefulWidget {
-  const MyIconWidget({
+class MyFavoriteIconWidget extends StatefulWidget {
+  const MyFavoriteIconWidget({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<MyIconWidget> createState() => _MyIconWidgetState();
+  State<MyFavoriteIconWidget> createState() => _MyFavoriteIconWidgetState();
 }
 
-class _MyIconWidgetState extends State<MyIconWidget> {
+class _MyFavoriteIconWidgetState extends State<MyFavoriteIconWidget> {
   bool isSelected = false;
 
   @override

@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children:  const [
             MyCardWidget(),
-            MyIconWidget()
+            MyFavoriteIconWidget()
           ],
         ),
       ),
